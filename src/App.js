@@ -1,7 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
 import Student from './components/Student';
-import Score from './components/Score';
 
 function App() {
 

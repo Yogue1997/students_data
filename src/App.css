@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #85144b;
+}
+
+.App {
+  max-width: 700px;
+  margin: auto;
+}
+
+.main {
+  border: 2px solid;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 7px;
+  background-color: #001f3f;
+  color: aliceblue;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+#bio,
+h3,
+.element {
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  margin: 20px 0px;
+}

@@ -1,15 +1,26 @@
 
 
-function Student (props) {
+function Student(props) {
 
-    const Yo = props.studentData.scores.map((data) => data.score)
+    const score = props.studentData.scores.map((data) => {
+        return <p>|{data.score}|</p>
+    })
 
-    return(
-        <div>
-            <h1>Name : {props.studentData.name}  </h1>
-            <h3><strong>Bio :</strong> {props.studentData.bio}</h3>
-            <p>Dates : {props.studentData.scores.map((data) => data.date)}</p>
-            <p>Score : {Yo}</p>
+    const date = props.studentData.scores.map((data) => {
+        return <p>|{data.date}|</p>
+    })
+
+    return (
+        <div className="main">
+            <h2>Name: {props.studentData.name} </h2>
+            <div>
+                <h3>Bio:</h3>
+                <p id="bio">{props.studentData.bio}</p>
+            </div>
+            <h3>Scores:</h3>
+            <p className="element">{score}</p>
+            <h3>Dates:</h3>
+            <p className="element">{date}</p>
         </div>
     )
 }
